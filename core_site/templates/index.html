@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elton Xavier | | Portfolio & Matérias</title>
+    <title>Elton Xavier | Portfolio & Matérias</title>
+    
+    <!-- Biblioteca de ícones para o símbolo do WhatsApp -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; color: #333; }
         .header { background: #35862e; color: white; padding: 60px 20px; text-align: center; }
@@ -14,10 +18,35 @@
         .about, .contact, .subjects { margin-top: 30px; text-align: left; line-height: 1.6; }
         h2 { color: #db1717; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
         .footer { text-align: center; font-size: 0.9em; color: #777; margin-bottom: 20px; }
+
+        /* ESTILO DO BOTÃO WHATSAPP */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 2px 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+            color: white;
+        }
     </style>
 </head>
 <body>
-
     <div class="header">
         <img src="{% static 'img/perfil.jpg' %}" alt="Elton" class="profile-img">
         <h1>Elton Xavier</h1>
@@ -27,13 +56,12 @@
     <div class="container">
         <section class="about">
             <h2>Sobre Mim</h2>
-            <p>Olá! Eu sou o Elton. Sou apaixonado por tecnologia e sou programador e desenvolvedor de aplicativos web, tanto como mobiles e este site foi construído por mim usando a linguagem de programação C++, e está hospedado na Vercel.</p>
+            <p>Olá! Eu sou o Elton. Sou apaixonado por tecnologia e sou programador e desenvolvedor de aplicativos web, tanto como mobiles e este site foi construído por mim usando a linguagem de programação Python (Django), e está hospedado na Vercel.</p>
         </section>
 
         <section class="subjects">
             <h2>Matérias & Assuntos</h2>
-            <p>Pretendo aqui partilhar conhecimentos na área de programação, desenvolvimento web e tecnologia. Com foco em tecnologias modernas, dedico o meu trabalho a transformar ideias complexas em plataformas intuitivas e escaláveis.
-Acredito que o desenvolvimento web não é apenas sobre escrever código, mas sim sobre resolver problemas e criar ferramentas que facilitem a vida dos utilizadores no seu dia-a-dia.</p>
+            <p>Pretendo aqui partilhar conhecimentos na área de programação, desenvolvimento web e tecnologia. Com foco em tecnologias modernas, dedico o meu trabalho a transformar ideias complexas em plataformas intuitivas e escaláveis. Acredito que o desenvolvimento web não é apenas sobre escrever código, mas sim sobre resolver problemas e criar ferramentas que facilitem a vida dos utilizadores no seu dia-a-dia.</p>
         </section>
 
         <section class="contact">
@@ -47,6 +75,13 @@ Acredito que o desenvolvimento web não é apenas sobre escrever código, mas si
         &copy; 2026 Elton Simone Xavier. Todos os direitos reservados.
     </div>
 
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <!-- Substitua o número abaixo pelo seu número real com o código de Moçambique (258) -->
+    <a href="https://wa.me/+258867729697" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
 </body>
 </html>
+
 
