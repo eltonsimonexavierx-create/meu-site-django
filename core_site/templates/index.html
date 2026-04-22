@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal | Elton</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; color: #333; }
+        .header { background: #35862e; color: white; padding: 60px 20px; text-align: center; }
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 20px; }
+        .container { max-width: 800px; margin: -40px auto 40px; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
+        h1 { margin: 10px 0; }
+        .about, .contact, .subjects { margin-top: 30px; text-align: left; line-height: 1.6; }
+        h2 { color: #db1717; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
+        .footer { text-align: center; font-size: 0.9em; color: #777; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="{% static 'img/perfil.jpg' %}" alt="Elton" class="profile-img">
+        <h1>Elton Simone Xavier</h1>
+        <p>Desenvolvedor Web & Programador em linguagens Python, Java e C++.</p>
+    </div>
+
+    <div class="container">
+        <section class="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou o Elton. Sou apaixonado por tecnologia e sou programador e desenvolvedor de aplicativos web, tanto como mobiles e este site foi construído por mim usando a linguagem de programação C++, e está hospedado na Vercel.</p>
+        </section>
+
+        <section class="subjects">
+            <h2>Matérias & Assuntos</h2>
+            <p>Pretendo aqui partilhar conhecimentos na área de programação, desenvolvimento web e tecnologia. Com foco em tecnologias modernas, dedico o meu trabalho a transformar ideias complexas em plataformas intuitivas e escaláveis.
+Acredito que o desenvolvimento web não é apenas sobre escrever código, mas sim sobre resolver problemas e criar ferramentas que facilitem a vida dos utilizadores no seu dia-a-dia.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contacto</h2>
+            <p><strong>Email:</strong> eltonsimonexavierx@gmail.com</p>
+            <p><strong>Localização:</strong> Maputo/Moçambique</p>
+        </section>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Elton Simone Xavier. Todos os direitos reservados.
+    </div>
+
+</body>
+</html>
+
