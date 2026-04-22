@@ -11,34 +11,43 @@
 
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; color: #333; }
+        
+        /* Cabeçalho Verde */
         .header { background: #35862e; color: white; padding: 60px 20px; text-align: center; }
         .profile-img { width: 180px; height: 180px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 20px; }
+        
         .container { max-width: 800px; margin: -40px auto 40px; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
+        
         h1 { margin: 10px 0; }
-        .about, .contact, .subjects { margin-top: 30px; text-align: left; line-height: 1.6; }
-        h2 { color: #db1717; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
-        .footer { text-align: center; font-size: 0.9em; color: #777; margin-bottom: 80px; }
+        
+        /* Títulos Vermelhos */
+        h2 { color: #db1717; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; margin-top: 30px; text-align: left; }
+        
+        .about, .contact, .subjects { text-align: left; line-height: 1.6; margin-top: 20px; }
+        .footer { text-align: center; font-size: 0.9em; color: #777; margin: 40px 0; }
 
-        /* Estilo do Botão WhatsApp */
-        .btn-whatsapp {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
+        /* ESTILO DO BOTÃO WHATSAPP - FORÇADO */
+        .whatsapp-fixo {
+            position: fixed !important;
+            bottom: 30px !important;
+            right: 30px !important;
+            background-color: #25d366 !important;
             color: white !important;
-            padding: 15px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            transition: all 0.3s ease;
+            padding: 15px 25px !important;
+            border-radius: 50px !important;
+            text-decoration: none !important;
+            font-weight: bold !important;
+            font-size: 18px !important;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+            z-index: 999999 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            visibility: visible !important;
+            opacity: 1 !important;
         }
-        .btn-whatsapp i { margin-right: 10px; font-size: 24px; }
-        .btn-whatsapp:hover { transform: scale(1.1); background-color: #128c7e; }
+        .whatsapp-fixo i { margin-right: 10px; font-size: 25px; }
+        .whatsapp-fixo:hover { transform: scale(1.1); background-color: #128c7e !important; }
     </style>
 </head>
 <body>
@@ -57,7 +66,7 @@
 
         <section class="subjects">
             <h2>Matérias & Assuntos</h2>
-            <p>Partilho aqui conhecimentos na área de programação, desenvolvimento web e tecnologia. O meu foco é transformar ideias em ferramentas que facilitem o dia-a-dia dos utilizadores.</p>
+            <p>Pretendo aqui partilhar conhecimentos na área de programação, desenvolvimento web e tecnologia. Com foco em tecnologias modernas, transformo ideias complexas em plataformas intuitivas.</p>
         </section>
 
         <section class="contact">
@@ -71,13 +80,14 @@
         &copy; 2026 Elton Simone Xavier. Todos os direitos reservados.
     </div>
 
-    <!-- BOTÃO WHATSAPP (Mude o 258000000000 para o seu número) -->
-    <a href="https://wa.me+258867729697" class="btn-whatsapp" target="_blank">
+    <!-- BOTÃO WHATSAPP (Muda o número X pelo teu real) -->
+    <a href="https://wa.me/+25867729697" class="whatsapp-fixo" target="_blank">
         <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
 
 </body>
 </html>
+
 
 
 
