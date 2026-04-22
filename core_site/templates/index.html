@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elton Xavier | Portfolio & Matérias</title>
     
-    <!-- Biblioteca de ícones para o símbolo do WhatsApp -->
+    <!-- Biblioteca de ícones (Font Awesome) -->
     <link rel="stylesheet" href="https://cloudflare.com">
 
     <style>
@@ -17,51 +17,47 @@
         h1 { margin: 10px 0; }
         .about, .contact, .subjects { margin-top: 30px; text-align: left; line-height: 1.6; }
         h2 { color: #db1717; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
-        .footer { text-align: center; font-size: 0.9em; color: #777; margin-bottom: 20px; }
+        .footer { text-align: center; font-size: 0.9em; color: #777; margin-bottom: 80px; }
 
-        /* ESTILO DO BOTÃO WHATSAPP */
-        .whatsapp-button {
+        /* Estilo do Botão WhatsApp */
+        .btn-whatsapp {
             position: fixed;
             bottom: 30px;
             right: 30px;
             background-color: #25d366;
-            color: white;
+            color: white !important;
+            padding: 15px 20px;
             border-radius: 50px;
-            text-align: center;
-            font-size: 35px;
-            box-shadow: 2px 4px 15px rgba(0,0,0,0.3);
-            z-index: 1000;
-            width: 65px;
-            height: 65px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 9999;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-decoration: none;
             transition: all 0.3s ease;
         }
-        .whatsapp-button:hover {
-            transform: scale(1.1);
-            background-color: #128c7e;
-            color: white;
-        }
+        .btn-whatsapp i { margin-right: 10px; font-size: 24px; }
+        .btn-whatsapp:hover { transform: scale(1.1); background-color: #128c7e; }
     </style>
 </head>
 <body>
+
     <div class="header">
         <img src="{% static 'img/perfil.jpg' %}" alt="Elton" class="profile-img">
         <h1>Elton Xavier</h1>
-        <p>Desenvolvedor Web & Programador em linguagens Python, Java e C++.</p>
+        <p>Desenvolvedor Web & Programador Python, Java e C++.</p>
     </div>
 
     <div class="container">
         <section class="about">
             <h2>Sobre Mim</h2>
-            <p>Olá! Eu sou o Elton. Sou apaixonado por tecnologia e sou programador e desenvolvedor de aplicativos web, tanto como mobiles e este site foi construído por mim usando a linguagem de programação Python (Django), e está hospedado na Vercel.</p>
+            <p>Olá! Eu sou o Elton. Sou apaixonado por tecnologia e sou programador e desenvolvedor de aplicativos web e mobiles. Este site foi construído por mim usando <strong>Python (Django)</strong> e está hospedado na Vercel.</p>
         </section>
 
         <section class="subjects">
             <h2>Matérias & Assuntos</h2>
-            <p>Pretendo aqui partilhar conhecimentos na área de programação, desenvolvimento web e tecnologia. Com foco em tecnologias modernas, dedico o meu trabalho a transformar ideias complexas em plataformas intuitivas e escaláveis. Acredito que o desenvolvimento web não é apenas sobre escrever código, mas sim sobre resolver problemas e criar ferramentas que facilitem a vida dos utilizadores no seu dia-a-dia.</p>
+            <p>Partilho aqui conhecimentos na área de programação, desenvolvimento web e tecnologia. O meu foco é transformar ideias em ferramentas que facilitem o dia-a-dia dos utilizadores.</p>
         </section>
 
         <section class="contact">
@@ -75,14 +71,14 @@
         &copy; 2026 Elton Simone Xavier. Todos os direitos reservados.
     </div>
 
-    <!-- BOTÃO WHATSAPP FLUTUANTE -->
-    <!-- Substitua o número abaixo pelo seu número real com o código de Moçambique (258) -->
-    <a href="https://wa.me/+258867729697" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <!-- BOTÃO WHATSAPP (Mude o 258000000000 para o seu número) -->
+    <a href="https://wa.me+258867729697!" class="btn-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
 
 </body>
 </html>
+
 
 
 
